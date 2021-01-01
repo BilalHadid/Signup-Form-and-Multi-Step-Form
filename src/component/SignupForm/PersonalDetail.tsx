@@ -45,7 +45,7 @@ const registerSchema = yup.object({
 const PersonalDetail: React.FC<any> = ({ submit, setFormValue, prevValue }) => {
   const forSubmit = (values: vlaues) => {
     submit(1);
-    alert(JSON.stringify(values));
+
     setFormValue({ ...values, ...prevValue });
   };
   let [passw, setPassw] = useState<boolean>(false);
